@@ -1,6 +1,6 @@
 /* ============================================
    Pas Froid aux Yeux - JavaScript principal
-   Navigation mobile, accessibilite, formulaire
+   Navigation mobile, accessibilité, formulaire
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Fermer le menu avec Echap
+    // Fermer le menu avec Échap
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && mainNav.classList.contains('open')) {
         mainNav.classList.remove('open');
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Effacer toutes les erreurs precedentes
+      // Effacer toutes les erreurs précédentes
       var oldErrors = contactForm.querySelectorAll('.form-error');
       oldErrors.forEach(function (el) { el.remove(); });
       requiredFields.forEach(function (field) {
@@ -115,17 +115,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!firstInvalid) firstInvalid = email;
       }
       if (message && !message.value.trim()) {
-        showFieldError(message, 'Veuillez ecrire un message.');
+        showFieldError(message, 'Veuillez écrire un message.');
         if (!firstInvalid) firstInvalid = message;
       }
 
       if (firstInvalid) {
         firstInvalid.focus();
       } else {
-        // Succes
+        // Succès
         var statusDiv = document.getElementById('form-status');
         if (statusDiv) {
-          statusDiv.textContent = 'Merci pour votre message ! Nous vous repondrons rapidement.';
+          statusDiv.textContent = 'Merci pour votre message ! Nous vous répondrons rapidement.';
           statusDiv.className = 'info-box success';
         }
         contactForm.reset();
