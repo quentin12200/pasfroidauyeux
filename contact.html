@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez l'association Pas Froid aux Yeux. Telephone, e-mail, formulaire. Nous sommes la pour vous ecouter et vous orienter.">
+  <title>Contact et aide rapide - Pas Froid aux Yeux</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Pas Froid aux Yeux - Retour a l'accueil">
+        <span class="logo-icon" aria-hidden="true">&#128065;</span>
+        Pas Froid aux Yeux
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navigation-principale">Menu</button>
+      <nav class="main-nav" id="navigation-principale" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="diagnostic.html">Apres le diagnostic</a></li>
+          <li><a href="annuaire.html">Annuaire</a></li>
+          <li><a href="conseils.html">Vie quotidienne</a></li>
+          <li><a href="mobilite.html">Mobilite</a></li>
+          <li><a href="numerique.html">Numerique</a></li>
+          <li><a href="pair-aidance.html">Pair-aidance</a></li>
+          <li><a href="benevole.html">Devenir benevole</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" role="main">
+
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">&raquo;</span>
+      <span aria-current="page">Contact et aide rapide</span>
+    </nav>
+
+    <h1>Contact et aide rapide</h1>
+
+    <p>
+      Vous avez besoin d'aide, d'information ou simplement de parler a quelqu'un ?
+      Nous sommes la pour vous ecouter et vous orienter. N'hesitez pas, aucune question
+      n'est trop petite.
+    </p>
+
+    <!-- Contact rapide -->
+    <section>
+      <h2>Nous joindre directement</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">&#128222;</span>
+          <h3>Par telephone</h3>
+          <p>Appelez-nous pour parler directement a un membre de l'association.</p>
+          <p><strong><a href="tel:+33XXXXXXXXX">XX XX XX XX XX</a></strong></p>
+          <p><em>(Le numero sera communique prochainement)</em></p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">&#9993;</span>
+          <h3>Par e-mail</h3>
+          <p>Ecrivez-nous, nous vous repondrons rapidement.</p>
+          <p><strong><a href="mailto:contact@pasfroidauxyeux.fr">contact@pasfroidauxyeux.fr</a></strong></p>
+        </article>
+
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">&#128259;</span>
+          <h3>Etre rappele</h3>
+          <p>
+            Laissez-nous vos coordonnees via le formulaire ci-dessous et nous vous rappellerons.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section>
+      <h2>Formulaire de contact</h2>
+      <p>Remplissez ce formulaire et nous reviendrons vers vous rapidement.</p>
+
+      <div class="contact-form">
+        <form action="#" method="post" novalidate>
+
+          <div class="form-group">
+            <label for="nom">Votre nom <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+            <input type="text" id="nom" name="nom" required autocomplete="name"
+                   aria-required="true" placeholder="Votre nom et prenom">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Votre adresse e-mail <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email"
+                   aria-required="true" placeholder="exemple@email.fr">
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Votre telephone (si vous souhaitez etre rappele)</label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel"
+                   placeholder="06 XX XX XX XX">
+          </div>
+
+          <div class="form-group">
+            <label for="sujet">Objet de votre message</label>
+            <select id="sujet" name="sujet">
+              <option value="">-- Choisissez --</option>
+              <option value="diagnostic">Je viens d'etre diagnostique</option>
+              <option value="proche">Je suis un proche</option>
+              <option value="benevole">Je veux devenir benevole</option>
+              <option value="information">Demande d'information</option>
+              <option value="annuaire">Suggerer un ajout a l'annuaire</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Votre message <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+            <textarea id="message" name="message" required
+                      aria-required="true"
+                      placeholder="Decrivez votre situation ou votre demande. Nous vous repondrons avec bienveillance."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="rappel" value="oui">
+              Je souhaite etre rappele par telephone
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Info importante -->
+    <div class="info-box warning">
+      <h3>En cas d'urgence</h3>
+      <p>
+        Si vous etes en detresse psychologique, appelez le <strong>3114</strong>
+        (numero national de prevention du suicide, 24h/24, gratuit et confidentiel).
+        Pour toute urgence medicale, appelez le <strong>15</strong> (SAMU) ou le
+        <strong>112</strong>.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Confidentialite</h3>
+      <p>
+        Vos informations personnelles sont traitees avec le plus grand respect.
+        Elles ne sont jamais partagees avec des tiers. Nous les utilisons
+        uniquement pour repondre a votre demande.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="diagnostic.html">Apres le diagnostic</a></li>
+          <li><a href="annuaire.html">Annuaire</a></li>
+          <li><a href="conseils.html">Vie quotidienne</a></li>
+          <li><a href="mobilite.html">Mobilite</a></li>
+          <li><a href="numerique.html">Numerique</a></li>
+          <li><a href="pair-aidance.html">Pair-aidance</a></li>
+          <li><a href="benevole.html">Devenir benevole</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <p>
+          <strong>Pas Froid aux Yeux</strong> &mdash; Association de pair-aidance pour la deficience visuelle<br>
+          <a href="mailto:contact@pasfroidauxyeux.fr">contact@pasfroidauxyeux.fr</a>
+        </p>
+      </div>
+      <div class="footer-accessibility">
+        <p>Site accessible &mdash; Compatible lecteurs d'ecran &mdash; Contraste eleve</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
