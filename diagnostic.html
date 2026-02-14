@@ -37,15 +37,16 @@
   <main id="contenu" role="main">
 
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
-      <a href="index.html">Accueil</a>
-      <span aria-hidden="true">&raquo;</span>
-      <span aria-current="page">Que faire apres le diagnostic ?</span>
+      <ol role="list">
+        <li><a href="index.html">Accueil</a> <span aria-hidden="true">&raquo;</span></li>
+        <li><span aria-current="page">Que faire apres le diagnostic ?</span></li>
+      </ol>
     </nav>
 
     <h1>Que faire apres le diagnostic ?</h1>
 
     <div class="info-box">
-      <h3>Vous venez de recevoir un diagnostic</h3>
+      <h2>Vous venez de recevoir un diagnostic</h2>
       <p>
         C'est normal de se sentir perdu, inquiet ou en colere. Prenez le temps qu'il vous faut.
         Cette page vous donne les etapes essentielles, a votre rythme. Vous n'avez pas besoin
@@ -55,7 +56,7 @@
 
     <h2>Les etapes essentielles</h2>
 
-    <ol class="steps">
+    <ol class="steps" role="list">
 
       <li>
         <h3>Prenez le temps d'accepter la nouvelle</h3>
@@ -136,7 +137,7 @@
           C'est l'etape la plus importante. Parlez a d'autres personnes qui vivent la meme
           situation. Notre association propose justement cet echange :
         </p>
-        <div class="btn-group" style="justify-content: flex-start;">
+        <div class="btn-group btn-group-left">
           <a href="pair-aidance.html" class="btn btn-primary">Decouvrir la pair-aidance</a>
           <a href="contact.html" class="btn btn-outline">Nous contacter</a>
         </div>
@@ -145,7 +146,7 @@
     </ol>
 
     <div class="info-box warning">
-      <h3>Les delais sont normaux</h3>
+      <h2>Les delais sont normaux</h2>
       <p>
         Il est frequent que plusieurs mois s'ecoulent entre le diagnostic et la prise en charge
         par un service specialise. Pendant cette periode, vous n'etes pas oblige de rester sans
@@ -164,7 +165,7 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <nav aria-label="Navigation secondaire">
-        <ul class="footer-nav">
+        <ul class="footer-nav" role="list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="diagnostic.html">Apres le diagnostic</a></li>
           <li><a href="annuaire.html">Annuaire</a></li>

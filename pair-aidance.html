@@ -37,9 +37,10 @@
   <main id="contenu" role="main">
 
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
-      <a href="index.html">Accueil</a>
-      <span aria-hidden="true">&raquo;</span>
-      <span aria-current="page">Pair-aidance et echanges</span>
+      <ol role="list">
+        <li><a href="index.html">Accueil</a> <span aria-hidden="true">&raquo;</span></li>
+        <li><span aria-current="page">Pair-aidance et echanges</span></li>
+      </ol>
     </nav>
 
     <h1>Pair-aidance et echanges</h1>
@@ -50,7 +51,7 @@
     </p>
 
     <div class="info-box">
-      <h3>Qu'est-ce que la pair-aidance ?</h3>
+      <h2>Qu'est-ce que la pair-aidance ?</h2>
       <p>
         La pair-aidance, c'est l'entraide entre personnes qui partagent une experience
         de vie similaire. Dans notre cas, il s'agit de personnes deficientes visuelles
@@ -106,7 +107,7 @@
     <!-- Pourquoi la pair-aidance -->
     <section>
       <h2>Pourquoi la pair-aidance aide</h2>
-      <ol class="steps">
+      <ol class="steps" role="list">
         <li>
           <h3>Vous comprenez que vous n'etes pas seul</h3>
           <p>
@@ -175,13 +176,13 @@
     <section>
       <h2>Comment participer ?</h2>
       <div class="info-box success">
-        <h3>C'est simple et gratuit</h3>
+        <h2>C'est simple et gratuit</h2>
         <p>
           Contactez-nous par telephone, par e-mail ou via notre formulaire de contact.
           Nous echangerons avec vous pour comprendre votre situation et vous proposer
           le type d'accompagnement le plus adapte. Aucune obligation, aucun engagement.
         </p>
-        <div class="btn-group" style="justify-content: flex-start;">
+        <div class="btn-group btn-group-left">
           <a href="contact.html" class="btn btn-primary">Nous contacter</a>
           <a href="benevole.html" class="btn btn-outline">Devenir benevole</a>
         </div>
@@ -193,7 +194,7 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <nav aria-label="Navigation secondaire">
-        <ul class="footer-nav">
+        <ul class="footer-nav" role="list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="diagnostic.html">Apres le diagnostic</a></li>
           <li><a href="annuaire.html">Annuaire</a></li>

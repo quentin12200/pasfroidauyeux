@@ -37,9 +37,10 @@
   <main id="contenu" role="main">
 
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
-      <a href="index.html">Accueil</a>
-      <span aria-hidden="true">&raquo;</span>
-      <span aria-current="page">Contact et aide rapide</span>
+      <ol role="list">
+        <li><a href="index.html">Accueil</a> <span aria-hidden="true">&raquo;</span></li>
+        <li><span aria-current="page">Contact et aide rapide</span></li>
+      </ol>
     </nav>
 
     <h1>Contact et aide rapide</h1>
@@ -60,7 +61,6 @@
           <span class="card-icon" aria-hidden="true">&#128222;</span>
           <h3>Par telephone</h3>
           <p>Appelez-nous pour parler directement a un membre de l'association.</p>
-          <p><strong><a href="tel:+33XXXXXXXXX">XX XX XX XX XX</a></strong></p>
           <p><em>(Le numero sera communique prochainement)</em></p>
         </article>
 
@@ -89,61 +89,64 @@
 
       <div class="contact-form">
         <form action="#" method="post" novalidate>
+          <fieldset>
+            <legend class="sr-only">Formulaire de contact</legend>
 
-          <div class="form-group">
-            <label for="nom">Votre nom <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
-            <input type="text" id="nom" name="nom" required autocomplete="name"
-                   aria-required="true" placeholder="Votre nom et prenom">
-          </div>
+            <div id="form-status" role="status" aria-live="polite"></div>
 
-          <div class="form-group">
-            <label for="email">Votre adresse e-mail <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
-            <input type="email" id="email" name="email" required autocomplete="email"
-                   aria-required="true" placeholder="exemple@email.fr">
-          </div>
+            <div class="form-group">
+              <label for="nom">Votre nom <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+              <input type="text" id="nom" name="nom" required autocomplete="name"
+                     aria-required="true">
+            </div>
 
-          <div class="form-group">
-            <label for="telephone">Votre telephone (si vous souhaitez etre rappele)</label>
-            <input type="tel" id="telephone" name="telephone" autocomplete="tel"
-                   placeholder="06 XX XX XX XX">
-          </div>
+            <div class="form-group">
+              <label for="email">Votre adresse e-mail <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email"
+                     aria-required="true">
+            </div>
 
-          <div class="form-group">
-            <label for="sujet">Objet de votre message</label>
-            <select id="sujet" name="sujet">
-              <option value="">-- Choisissez --</option>
-              <option value="diagnostic">Je viens d'etre diagnostique</option>
-              <option value="proche">Je suis un proche</option>
-              <option value="benevole">Je veux devenir benevole</option>
-              <option value="information">Demande d'information</option>
-              <option value="annuaire">Suggerer un ajout a l'annuaire</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="telephone">Votre telephone (si vous souhaitez etre rappele)</label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+            </div>
 
-          <div class="form-group">
-            <label for="message">Votre message <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
-            <textarea id="message" name="message" required
-                      aria-required="true"
-                      placeholder="Decrivez votre situation ou votre demande. Nous vous repondrons avec bienveillance."></textarea>
-          </div>
+            <div class="form-group">
+              <label for="sujet">Objet de votre message</label>
+              <select id="sujet" name="sujet">
+                <option value="">-- Choisissez --</option>
+                <option value="diagnostic">Je viens d'etre diagnostique</option>
+                <option value="proche">Je suis un proche</option>
+                <option value="benevole">Je veux devenir benevole</option>
+                <option value="information">Demande d'information</option>
+                <option value="annuaire">Suggerer un ajout a l'annuaire</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label>
-              <input type="checkbox" name="rappel" value="oui">
-              Je souhaite etre rappele par telephone
-            </label>
-          </div>
+            <div class="form-group">
+              <label for="message">Votre message <span aria-hidden="true">*</span><span class="sr-only">(obligatoire)</span></label>
+              <textarea id="message" name="message" required
+                        aria-required="true"></textarea>
+            </div>
 
-          <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+            <div class="form-group">
+              <label for="rappel">
+                <input type="checkbox" id="rappel" name="rappel" value="oui">
+                Je souhaite etre rappele par telephone
+              </label>
+            </div>
 
+            <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+
+          </fieldset>
         </form>
       </div>
     </section>
 
     <!-- Info importante -->
     <div class="info-box warning">
-      <h3>En cas d'urgence</h3>
+      <h2>En cas d'urgence</h2>
       <p>
         Si vous etes en detresse psychologique, appelez le <strong>3114</strong>
         (numero national de prevention du suicide, 24h/24, gratuit et confidentiel).
@@ -153,7 +156,7 @@
     </div>
 
     <div class="info-box">
-      <h3>Confidentialite</h3>
+      <h2>Confidentialite</h2>
       <p>
         Vos informations personnelles sont traitees avec le plus grand respect.
         Elles ne sont jamais partagees avec des tiers. Nous les utilisons
@@ -166,7 +169,7 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <nav aria-label="Navigation secondaire">
-        <ul class="footer-nav">
+        <ul class="footer-nav" role="list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="diagnostic.html">Apres le diagnostic</a></li>
           <li><a href="annuaire.html">Annuaire</a></li>

@@ -37,9 +37,10 @@
   <main id="contenu" role="main">
 
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
-      <a href="index.html">Accueil</a>
-      <span aria-hidden="true">&raquo;</span>
-      <span aria-current="page">Conseils pour la vie quotidienne</span>
+      <ol role="list">
+        <li><a href="index.html">Accueil</a> <span aria-hidden="true">&raquo;</span></li>
+        <li><span aria-current="page">Conseils pour la vie quotidienne</span></li>
+      </ol>
     </nav>
 
     <h1>Conseils pour la vie quotidienne</h1>
@@ -51,7 +52,7 @@
     </p>
 
     <div class="info-box">
-      <h3>Un conseil a la fois</h3>
+      <h2>Un conseil a la fois</h2>
       <p>
         N'essayez pas de tout changer d'un coup. Choisissez un domaine qui vous pose le plus
         de difficultes et commencez par la. Chaque petit progres compte.
@@ -61,7 +62,7 @@
     <!-- Cuisine et repas -->
     <section>
       <h2>Cuisine et repas</h2>
-      <ul class="tips-list">
+      <ul class="tips-list" role="list">
         <li>
           <strong>Utilisez des planches a decouper de couleur contrastee</strong> : une planche
           sombre pour les aliments clairs et inversement. Cela permet de mieux voir ce que vous coupez.
@@ -93,7 +94,7 @@
     <!-- Organisation du domicile -->
     <section>
       <h2>Organisation du domicile</h2>
-      <ul class="tips-list">
+      <ul class="tips-list" role="list">
         <li>
           <strong>Gardez les objets toujours au meme endroit</strong>. Demandez a votre
           entourage de respecter ce rangement.
@@ -121,7 +122,7 @@
     <!-- Contrastes et eclairage -->
     <section>
       <h2>Contrastes et eclairage</h2>
-      <ul class="tips-list">
+      <ul class="tips-list" role="list">
         <li>
           <strong>Augmentez les contrastes</strong> : interrupteurs de couleur sur murs clairs,
           assiettes sombres sur nappe claire, bande adhesive de couleur sur les marches d'escalier.
@@ -148,7 +149,7 @@
     <!-- Securite -->
     <section>
       <h2>Securite au domicile</h2>
-      <ul class="tips-list">
+      <ul class="tips-list" role="list">
         <li>
           <strong>Fixez les tapis</strong> avec du ruban adhesif double face ou retirez-les
           si possible. Les tapis sont une cause frequente de chute.
@@ -174,7 +175,7 @@
     <!-- Lecture et loisirs -->
     <section>
       <h2>Lecture et loisirs</h2>
-      <ul class="tips-list">
+      <ul class="tips-list" role="list">
         <li>
           <strong>Livres audio</strong> : de nombreuses bibliotheques proposent des livres
           audio gratuits. Des services comme Audible ou les bibliotheques sonores
@@ -196,7 +197,7 @@
     </section>
 
     <div class="info-box success">
-      <h3>L'aide d'un professionnel</h3>
+      <h2>L'aide d'un professionnel</h2>
       <p>
         Un <strong>instructeur en AVJ</strong> (Autonomie de la Vie Journaliere) peut venir
         chez vous pour vous montrer des techniques adaptees a votre situation personnelle.
@@ -215,7 +216,7 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <nav aria-label="Navigation secondaire">
-        <ul class="footer-nav">
+        <ul class="footer-nav" role="list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="diagnostic.html">Apres le diagnostic</a></li>
           <li><a href="annuaire.html">Annuaire</a></li>
